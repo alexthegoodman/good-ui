@@ -6,6 +6,8 @@
 
 ### Getting Started
 
+A collection of TypeScript React components leveraing the Ant Design UI Framework.
+
 ### Editing
 
 ### Tooling
