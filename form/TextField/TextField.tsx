@@ -7,11 +7,11 @@ import InputMask from "react-input-mask";
 import { Input } from "antd";
 // import StringMask from "string-mask";
 
-export enum TextFieldMasks {
-  NONE = "none",
-  PHONE = "phone",
-  CCNUMBER = "creditCardNumber",
-}
+export const TextFieldMasks = {
+  NONE: "none",
+  PHONE: "phone",
+  CCNUMBER: "creditCardNumber",
+};
 
 const TextField: React.FC<TextFieldProps> = ({
   ref = null,

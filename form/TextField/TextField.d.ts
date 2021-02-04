@@ -10,6 +10,6 @@ export interface TextFieldProps {
   fieldInfo?: string;
   fieldPlaceholder?: string;
   fieldType?: string;
-  fieldMask?: TextFieldMasks;
+  fieldMask?: typeof TextFieldMasks;
   fieldProps?: any;
 }

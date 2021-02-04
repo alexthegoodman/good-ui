@@ -24,7 +24,7 @@ import { withScope, captureException, showReportDialog } from "@sentry/browser";
 //   );
 // };
 
-class ErrorFallback extends React.Component<any, any, any> {
+class ErrorFallback extends React.Component<any, any> {
   constructor(props) {
     super(props);
     this.state = { error: null, eventId: null };
