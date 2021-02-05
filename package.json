@@ -1,0 +1,9 @@
+{
+  "name": "good-ui",
+  "version": "1.0.0",
+  "description": "Ant Design based UI Kit",
+  "main": "index.js",
+  "repository": "https://github.com/alexthegoodman/good-ui.git",
+  "author": "Alex Woodman <alexthegoodman@gmail.com>",
+  "license": "MIT"
+}
