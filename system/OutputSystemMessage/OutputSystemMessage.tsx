@@ -1,3 +1,6 @@
+import Text from "antd/lib/typography/Text";
+import { Alert } from "antd";
+
 import * as React from "react";
 
 import { OutputSystemMessageProps } from "./OutputSystemMessage.d";
@@ -24,32 +27,14 @@ const OutputSystemMessage: React.FC<OutputSystemMessageProps> = ({
       break;
   }
 
+  let message = "";
+  if (title !== "") message = title;
+  if (attemptRefetch) message = "Will attempt refetch.";
+  if (output !== "") message = output;
+
   return (
     <>
-      <Callout className="outputSystemMessage" icon="warning-sign">
-        {title !== "" ? (
-          <Text tagName="p">
-            <Text tagName="strong">{title}</Text>
-          </Text>
-        ) : (
-          <></>
-        )}
-        {attemptRefetch ? (
-          <Text tagName="p">Will attempt refetch.</Text>
-        ) : (
-          <></>
-        )}
-        {output !== "" ? (
-          <>
-            <Text tagName="p">
-              <Text tagName="strong">Output</Text>
-            </Text>
-            <Text tagName="p">{output}</Text>
-          </>
-        ) : (
-          <></>
-        )}
-      </Callout>
+      <Alert className="outputSystemMessage" type="warning" message={message} />
     </>
   );
 };

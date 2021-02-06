@@ -1,4 +1,5 @@
 import * as React from "react";
+import Text from "antd/lib/typography/Text";
 
 import { SemanticAddressProps } from "./SemanticAddress.d";
 

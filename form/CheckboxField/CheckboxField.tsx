@@ -4,7 +4,7 @@ import { Field, FieldProps } from "formik";
 import ValidationNotice from "../ValidationNotice/ValidationNotice";
 import { CheckboxFieldProps } from "./CheckboxField.d";
 
-import Checkmark from "../../../assets/img-min/checkmark.svg";
+// import Checkmark from "../../../assets/img-min/checkmark.svg";
 
 const CheckboxField: React.FC<CheckboxFieldProps> = ({
   ref = null,
@@ -32,19 +32,19 @@ const CheckboxField: React.FC<CheckboxFieldProps> = ({
           labelInfo={fieldInfo}
         >
           <div className="checkboxField">
-            {field.value ? (
+            {/* {field.value ? (
               <div className="checkmark">
                 <Checkmark />
               </div>
             ) : (
               <></>
-            )}
-            <Checkbox
+            )} */}
+            {/* <Checkbox
               id={fieldName}
               className={className}
               label={label}
               {...field}
-            />
+            /> */}
             {form.touched[fieldName] && form.errors[fieldName] ? (
               <ValidationNotice error={form.errors[fieldName] as string} />
             ) : (

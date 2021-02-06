@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "https://github.com/alexthegoodman/good-ui.git",
   "author": "Alex Woodman <alexthegoodman@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/browser": "^6.1.0",
+    "antd": "^4.12.2",
+    "formik": "^2.2.6",
+    "react": "^17.0.1",
+    "react-input-mask": "^2.0.4",
+    "react-select": "^4.0.2"
+  }
 }

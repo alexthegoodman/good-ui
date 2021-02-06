@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Field, FieldProps } from "formik";
 // import ReactQuill, { Quill } from "react-quill";
-import Utility from "../../../../services/Utility";
+import Utility from "good-helpers/Utility";
 import ValidationNotice from "../ValidationNotice/ValidationNotice";
 import { QuillFieldProps } from "./QuillField.d";
 

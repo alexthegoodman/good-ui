@@ -1,3 +1,4 @@
+import Text from "antd/lib/typography/Text";
 import * as React from "react";
 
 import { NoResultsProps } from "./NoResults.d";
